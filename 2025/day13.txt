@@ -1,0 +1,6 @@
+Spreadsheet
+
+The runners should not be ordered from a factor of (today's number)
+
+175 = 5 * 5 * 7
+Factors, with 1 digit: 1, 5, 7

@@ -1,0 +1,33 @@
+Holly picks the number 513, reverses it to get 315, then adds the two together to make 828.
+Ivy picks a three-digit number, reverses it, then adds the two together to make 968. What is the smallest number that Ivy could have started with?
+
+abc + cba = 968
+
+ abc
++cba
+----
+ 968
+
+c+a = 8 or 18
+a+c (+1?) = 9
+
+It must be 8, and 8 + carry
+
+a+c = 8
+
+b+b >= 10
+b+b = 16
+b = 8
+
+ a8c
++c8a
+----
+ 968
+
+To make a small number, a must be small.
+
+ 187
++781
+----
+ 968
+

@@ -1,0 +1,6 @@
+The odd factors of 2025 are 1, 3, 5, 9, 15, 25, 27, 45, 75, 81, 135, 225, 405, 675 and 2025. There are 15 of these factors and 15 is itself an odd factor of 2025.
+What is the smallest three-digit number whose number of odd factors is itself an odd factor of the number?
+
+So, 128 is a candidate, as the only odd factor is 1.
+
+Program confirms it.

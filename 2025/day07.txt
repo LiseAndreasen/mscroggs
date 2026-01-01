@@ -1,0 +1,5 @@
+355 players
+1 winner
+354 losers
+Each match produces 1 loser
+354 matches

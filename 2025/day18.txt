@@ -1,0 +1,13 @@
+There are 5 different ways to make a set of numbers between 1 and 5 such that the smallest number in the set is equal to the number of numbers in the set. These 5 sets are: {1}, {2, 3}, {2, 4}, {2, 5} and {3, 4, 5}.
+How many ways are there to make a set of numbers between 1 and 14 such that the smallest number in the set is equal to the number of numbers in the set?
+
+1 											-- 1 way
+2 + 1 of 3-14 								-- 12 ways
+3 + 2 of 4-14 - choose(11, 2) 				-- 11*10/2 = 55
+4 + 3 of 5-14 - choose(10,3) 				-- 10*9*8/6 = 120
+5 + 4 of 6-14 - choose(9,4) 				-- 9*8*7*6/24 = 126
+6 + 5 of 7-14 - choose(8,5) = choose(8,3) 	-- 8*7*6/6 = 56
+7 + 6 of 8-14 - choose(7,6) = choose(7,1) 	-- 7
+8: impossible
+
+1+12+55+120+126+56+7 = 377

@@ -1,0 +1,22 @@
+Angel wrote out a muliplication square for the numbers from 1 to 3 (the table has the numbers 1 to 3 in the top row and left column, then every other entry is equal to the number at the top of its column multiplied by the number at the left of its row):
+ 1 	 2 	 3 
+ 2 	 4 	 6 
+ 3 	 6 	 9 
+The sum of the numbers in the bottom row is 18. The sum of all the numbers in the table is 36.
+Angel then wrote out another multiplication square with the numbers from 1 to n. The sum of all the numbers in the new table is 2025. What is the sum of the numbers in the bottom row of the new table?
+
+Sum 1-n = n * (n+1)/2
+The sum of the numbers in the 1st row is 1+2+3 = 3*(3+1)/2 = 6
+The sum of the numbers in the 2nd row is 2 * 6 = 12
+The sum of the numbers in the 3rd row is 3 * 6 = 18
+The sum of all the numbers is 6 + 12 + 18 = 36
+
+This sum is also (sum 1-n) * (sum 1-n)
+(1+2+3)*(1+2+3)
+
+n * (n+1)/2 * n * (n+1)/2 = 2025
+n * (n+1)/2 = 45
+n * (n+1) = 90
+n = 9
+
+Sum of nth row: 9 * 45 = 405

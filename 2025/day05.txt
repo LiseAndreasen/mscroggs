@@ -1,0 +1,25 @@
+The number 36 is equal to two times the product of its digits.
+
+36, 2 * 3 * 6 = 36
+
+What is the only (strictly positive) number that is equal to four times the product of its digits?
+
+Assume 3 digit number, abc
+
+abc = 4 * a * b * c
+100a + 10b + c = 4 * a * b * c
+
+None of the digits can be 0
+The digits must be the same, otherwise there would be more than 1 permutation
+
+Test:
+
+111, 4 * 1 * 1 * 1 = 4
+25 <= a * b * c
+222, 4 * 2 * 2 * 2 = 32
+333, 4 * 3^3 = 108
+Hm.
+
+Oh. Wrong that the digits must be the same
+
+384 - spreadsheet

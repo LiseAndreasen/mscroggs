@@ -1,0 +1,26 @@
+Today's clue and the clue on (the first two digits of today's number) December are false
+
+The clue says "both of these clues are false".
+This clue can't be true and then falsely claim to be false.
+The clue is false, so the other clue must be true.
+
+--
+
+A number is called a perfect power if it is equal to n^k for some integer n and some integer k > 1. 2025 is a perfect power (45^2) and 23 more than 2025 is also a perfect power (2^11).
+What is the only three-digit perfect power that is 29 less than another perfect power?
+
+Write a program.
+
+The higher of these 2 perfect powers is less than 1000 + 29
+k is at most 10, 2^10 = 1024, 3^9 is too much.
+n is at most 32, 32^2 = 1024
+
+196
+
+Oh. There was actually an easier way to find this.
+(a + 1)^2 = a^2 + 2a + 1
+2a + 1 = 29
+a = 14
+a^2 = 196
+
+The puzzle tells us this is the only way.

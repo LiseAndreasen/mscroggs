@@ -1,0 +1,20 @@
+Some numbers can be written as the sum of four consecutive numbers, for example: 142 = 34 + 35 + 36 + 37.
+What is the mean of all the three-digit numbers that can be written as the sum of four consecutive numbers?
+
+Sum of 4 consec number:
+a + a+1 + a+2 + a+3
+4a + 6
+4(a+1) + 2
+This number is divided by 2, but not 4.
+
+Lowest possible:
+102
+
+Highest possible:
+998
+
+The mean:
+
+(102+998)/2 = 550
+
+(Yes, these aren't the only possible numbers. But the rest won't change the mean.)

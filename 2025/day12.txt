@@ -1,0 +1,33 @@
+Mary uses the digits 1, 2, 3, 4, 5, 6 and 7 to make two three-digit numbers and a one-digit number (using each digit exactly once). The sum of her three numbers is 1000.
+What is the smallest that the larger of her two three-digit numbers could be?
+
+ abc
+ def
+   g
+----
+1000
+
+c+f+g=10
+
+1+b+e=10
+
+1+a+d=10
+
+a+d=9
+b+e=9
+
+2+7=9
+3+6=0
+4+5=9
+
+1 has to be in the last column
+
+Ha!
+
+c+f+g=10
+One of them is 1
+1+f+g=9
+
+5  2  1   large
+4  7  6   small
+      3

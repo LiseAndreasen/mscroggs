@@ -1,0 +1,23 @@
+Holly added up 3 consecutive numbers starting at 10, then added up the next 3 consective numbers, then found the difference between her two totals:
+
+    10 + 11 + 12 = 33
+    13 + 14 + 15 = 42
+    42 – 33 = 9
+
+Ivy added up n consecutive numbers starting at m, then added up the next n consecutive numbers, then found the difference between her two totals. The difference was 203401. What is the largest possible value of n that Ivy could have used?
+
+The difference between the 2 sums above is 3*3.
+
+m   + m+1   + m+2   + ... m+n-1
+m+n + m+n+1 + m+n+2 + ... m+2n-1
+
+The difference between the sums is n*n.
+
+m+n    -  m    = n
+m+n+1  - (m+1) = n
+...
+m+2n-1 - (m+n-1) = n
+
+n times
+
+sqrt(203401) = 451

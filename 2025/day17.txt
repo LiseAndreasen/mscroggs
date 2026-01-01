@@ -1,0 +1,64 @@
+A sequence of zeros and ones can be reduced by writing a 0 or 1 under each pair of numbers: 1 is written if the numbers are the same, 0 is written if they are not. This process can be repeated until there is a single number. For example, if we start with the sequence 1, 1, 1, 0, 1 (of length 5), we get:
+	1 	1 	1 	0 	1
+	1 	1 	0 	0 	
+	1 	0 	1 	
+	1 	1 	
+	1 	
+The final digit is a 1.
+How many sequences of zeros and ones of length 10 are there that when reduced lead to the final digit being a 1?
+
+A sequence of length 1 can be 0 or 1.
+
+A sequence of length 2 can be 00, 01, 10 or 11.
+00 and 11 become 1.
+01 and 10 become 0.
+
+A sequence of length 3 can be:
+000		001		010		011		100		101		110		111
+11		10		00		01		01		00		10		11
+1		0		1		0		0		1		0		1
+
+My intuition says, there are 1024 sequences of length 10, and half of them give 1.
+512.
+
+I can build my way up.
+
+1 at the bottom.
+Given the first number, I can build the next sequence of length 2.
+Begin with a 1. The length 2 sequence begins with either 0 or 1.
+
+1			1
+1	1		0	0
+
+And so on
+
+Let's try building every sequence of length 5
+
+1		1		1		1		1		1		1
+00		00		00		00		00		00		00
+010		010		010		010		101		101		101
+0110	0110	1001	1001	0011	0011	1100
+01110	10001	00100	11011	01000	10111	00010
+
+0		0		0
+01		01		01
+011		011		011
+0111	0111	1000
+01111	10000	00101
+
+There's a relationship between the length 1 sequence and the final number of the length 5 sequence.
+Begin with 4 numbers, 0 or 1. These are the first numbers of the length 2-5 sequences.
+Depending on the 1st number, i.e. the sequence of length 1, the last number of the length 5 sequence also changes.
+
+For each run of 4 numbers, there's a positive and a negative version.
+
+x
+a*
+b**
+c***
+d***y
+
+Given abcd and x, I have y.
+Reverse x, and I also reverse y.
+So half of all the sequences d***y lead to x and half don't.
+

@@ -1,0 +1,59 @@
+There are five ways to make a list of four As and Bs that don't contain an odd number of As in a row:
+
+    B,B,B,B
+    A,A,B,B
+    B,A,A,B
+    B,B,A,A
+    A,A,A,A
+
+How many ways are there to make a list of eleven As and Bs that don't contain an odd number of As in a row?
+
+How many ways to make the list of 0 As and Bs?
+1
+-
+
+How many ways to make the list of 1 As and Bs?
+1
+B
+
+How many ways to make the list of 2 As and Bs?
+I can take the 0 variant and add 2 As
+Or I can take the 1 variant and add 1 B
+2
+-AA
+B-B
+
+How many ways to make the list of 3 As and Bs?
+I can take the 1 variant and add 2 As
+Or I can take the 2 variant and add 1 B
+3
+B-AA
+AA-B
+BB-B
+
+How many ways to make the list of 4 As and Bs?
+I can take the 2 variant and add 2 As
+Or I can take the 3 variant and add 1 B
+5
+AA-AA
+BB-AA
+BAA-B
+AAB-B
+BBB-B
+
+Fibonacci!
+
+0, 1,
+1, 2, 3, 5, 8,
+13, 21, 34, 55, 89,
+144, 233, 377, 610, 987,
+1597, 2584, 4181, 6765, 10946,
+17711, 28657, 46368, 75025, 121393
+
+f(0) = 1
+f(1) = 1
+f(2) = f(0) + f(1) = 1 + 1 = 2
+f(3) = f(1) + f(2) = 1 + 2 = 3
+f(4) = f(2) + f(3) = 2 + 3 = 5
+...
+f(11) = 144

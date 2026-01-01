@@ -1,0 +1,9 @@
+In a 3 by 5 grid of squares, if a line is drawn from the bottom left corner to the top right corner, it will pass through 7 squares:
+In a 251 by 272 grid of squares, how many squares will a line drawn from the bottom left corner to the top right corner pass through?
+
+251: prime
+272: 2^4 * 17
+
+Does the line go through any already existing corners? No, as one of the numbers is prime.
+
+Result: 251 + 272 - 1 = 522
